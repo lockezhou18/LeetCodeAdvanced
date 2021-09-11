@@ -1,0 +1,3 @@
+    0 1 3 0 4 2 2     2
+            s --- position of the first dup element
+            f --- position of the non dup element

@@ -1,0 +1,4 @@
+keep一个delta本质上是贪心的思想，在必须要进行操作的时候进行操作（增加，删除）
+delta的含义： from 0 到 当前状态 i， 剩余待匹配的左括号个数，当前状态eval结束后，看要进行操作的方式进行操作， 然后转移到下一个状态 i + 1
+ref ： https://github.com/wisdompeak/LeetCode/tree/master/Greedy/1249.Minimum-Remove-to-Make-Valid-Parentheses
+当delta < 0 的时候，意味着必须要对右括号进行操作，否则后面状态不可能有相匹配的左括号

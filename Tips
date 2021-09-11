@@ -1,0 +1,25 @@
+获得一个integer的千位，百位，十位，个位数字：
+num / 1000
+num % 1000 / 100
+num % 100 / 10
+num % 10
+
+ return thousands[num / 1000] + hundreds[num % 1000 / 100] + tens[num % 100 / 10] + ones[num % 10];
+
+hashcode and equals of point
+ public boolean equals(Object o) {
+    return o instanceof Coord && ((Coord)o).i == i && ((Coord)o).j == j;
+  }
+
+  public int hashCode() {
+        int hashCode = 1;
+        hashCode = 31 * hashCode + i;
+        hashCode = 31 * hashCode + j;
+        return hashCode;
+  }
+
+
+然后有道题想的不是特别明白，想请教下各位大佬。。
+题目是Lc 1235, 题目大意为给定一堆interval（startTime, endTime), 每个interval对应一个profit，要求在没有overlapping的情况下搜索到最大profit.
+我的想法为首先根据start对interval排序，然后对于当前的interval， 对于他之后的每一个non overlapping interval做一次搜索，进而找到最大的profit.
+这是code，但是好像不太对，想请教一下各位，bug在哪里。。

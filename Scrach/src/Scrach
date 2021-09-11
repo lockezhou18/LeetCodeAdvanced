@@ -1,0 +1,36 @@
+[0, len - 1]
+
+[0, boundary] -> >= pivotVal
+
+[boundary, i] -> < pivotVal
+
+[i, end] - unexplored
+
+------boundry-------------------
+
+k = 2
+
+pivotVal = 10
+pivotIdx =  第i大
+
+random val  -- nlgn -- 2T(n/2) ~ nlgn
+
+O(n) - O(n^2)
+
+T(n) = T(n - 2)  + c
+
+   [3, 2, 1, 4, 6, 5]
+             b
+                i
+
+
+
+-1
+[0,0]
+[0,b] elements belongs to [0, b] should be <= pivot
+[b + 1, i] elements belong to ta should be > pivot
+[i, len - 2] unexplored
+
+pivotVal = 4
+pivotIdx = 5
+
